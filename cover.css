@@ -27,7 +27,7 @@ a:hover {
 html,
 body {
   height: 100%;
-  background-color: #333;
+  background-image: url(assets/orange-floral-banner.jpg);
 }
 
 body {
@@ -92,11 +92,10 @@ body {
 .cover {
   padding: 0 1.5rem;
 }
-.cover .btn-lg {
+.cover .btn-sm {
   padding: .75rem 1.25rem;
   font-weight: 700;
 }
-
 
 /*
  * Footer
