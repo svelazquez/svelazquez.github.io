@@ -2,11 +2,14 @@
     height: auto;
     width: 175px;
 }
-body{
-    background-image: url(../assets/orange-floral-banner.jpg);
-    font-family: 'Roboto Slab', serif;
-    height: 100%;
-
+.nav>a:link, .nav>a:visited {
+    color: black;
+}
+.nav-pills > .nav-link.active{
+    background-color: transparent;
+    border: 1px dotted black;
+    border-radius: 25px;
+    color: black;
 }
 .aside{
     margin-left: 25px;
@@ -15,12 +18,22 @@ body{
     alignment: left;
     background-color: lavenderblush;
     box-shadow: 20px 10px 60px 2px rgba(0,0,0,0.5);
-
 }
 .intro{
     text-align: center;
-    !important;
+!important;
 }
+
+
+body{
+    background-image: url(../assets/orange-floral-banner.jpg);
+    font-family: 'Roboto Slab', serif;
+    height: 100%;
+
+}
+
+
+
 .main{
     height: 100vh;
     width: 100%;
