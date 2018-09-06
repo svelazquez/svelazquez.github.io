@@ -7,14 +7,16 @@
     <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-
+    <!------FAVICON------>
     <link rel="icon" href="assets/cat-bus.gif">
+    <!------GOOGLE FONT------>
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100" rel="stylesheet">
     <!--<link rel="stylesheet" href="cover.css">-->
     <link rel="stylesheet" href="css/custom.css">
 
 </head>
 <body>
+<!------easter egg------>
 <div class="modal fade" tabindex="-1" id="myModal" role="dialog" style="background-image: url(konami-code-master/img/space-bckgrnd.jpg">
     <div class="modal-dialog" role="document">
         <div class="modal-content" style="background: rgba(0,0,0,0.25); border: 1px solid white; box-shadow: 20px 10px 60px 2px rgba(255,255,255,0.5);">
@@ -31,61 +33,21 @@
             <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Take Me, Void</button>
             </div>
-        </div><!-- /.modal-content -->
-    </div><!-- /.modal-dialog -->
-</div><!-- /.modal -->
-<!--<div class="bd-example">-->
-    <!--<div class="row">-->
-        <!--<div class="col-4">-->
-<!--<nav id="navbar-example3" class="navbar navbar-light bg-light">-->
-    <!--<a class="navbar-brand" href="#">Navbar</a>-->
-    <!--<nav class="nav nav-pills flex-column">-->
-        <!--<a class="nav-link" href="#item-1">Item 1</a>-->
-        <!--<nav class="nav nav-pills flex-column">-->
-            <!--<a class="nav-link ml-3 my-1" href="#item-1-1">Item 1-1</a>-->
-            <!--<a class="nav-link ml-3 my-1" href="#item-1-2">Item 1-2</a>-->
-        <!--</nav>-->
-        <!--<a class="nav-link" href="#item-2">Item 2</a>-->
-        <!--<a class="nav-link" href="#item-3">Item 3</a>-->
-        <!--<nav class="nav nav-pills flex-column">-->
-            <!--<a class="nav-link ml-3 my-1" href="#item-3-1">Item 3-1</a>-->
-            <!--<a class="nav-link ml-3 my-1" href="#item-3-2">Item 3-2</a>-->
-        <!--</nav>-->
-    <!--</nav>-->
-<!--</nav>-->
-        <!--</div>-->
-        <!--<div class="col-8">-->
+        </div>
+    </div>
+</div>
 
-
-<!--<div data-spy="scroll" data-target="#navbar-example3" data-offset="0" class="scrollspy-example-2">-->
-    <!--<h4 id="item-1">Item 1</h4>-->
-    <!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A ad aliquid aut dolorum earum, enim est, ipsum libero molestias non placeat quae qui repellat veniam voluptates. Aspernatur earum neque voluptates!</p>-->
-    <!--<h5 id="item-1-1">Item 1-1</h5>-->
-    <!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius ex impedit nesciunt non pariatur perferendis, possimus! Dolorum eius eligendi expedita ipsum, praesentium quod ut! Cupiditate laudantium odit repellat tempora vitae.</p>-->
-    <!--<h5 id="item-1-2">Item 2-2</h5>-->
-    <!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto asperiores aspernatur, atque autem cumque cupiditate incidunt ipsam iste itaque, optio placeat quaerat, quo quod quos sequi soluta tenetur velit vero!</p>-->
-    <!--<h4 id="item-2">Item 2</h4>-->
-    <!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet aspernatur consectetur cupiditate dolore doloremque dolores ex facere illo, in ipsum itaque iusto nam nostrum placeat porro quod, similique temporibus veniam.</p>-->
-    <!--<h4 id="item-3">Item 3</h4>-->
-    <!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate expedita libero magnam voluptate. Aspernatur earum excepturi nostrum quidem sapiente. Commodi cupiditate et fuga magni, mollitia perspiciatis tenetur ut. Maiores, omnis.</p>-->
-    <!--<h5 id="item-3-1">Item 3-1</h5>-->
-    <!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquam at aut cupiditate delectus deleniti est iure nihil odio quibusdam reiciendis, rem repudiandae sint vel vero. A, laudantium voluptatum! Distinctio?</p>-->
-    <!--<h5 id="item-3-2">Item 3-2</h5>-->
-    <!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque dolorem eos est eum fugit laboriosam, molestias numquam quam quibusdam ratione, reiciendis voluptates! Accusantium assumenda dolor ex quo rerum sequi similique?</p>-->
-<!--</div>-->
-        <!--</div>-->
-    <!--</div>-->
 
     <div class="row">
-        <div class="aside col-md-auto d-none d-md-block">
+        <div class="col-md-auto collapse multi-collapse z-index:1000" id="aside">
                 <nav id="navi" class="navbar navbar-light">
-                    <a class="navbar-brand" href="#">
-                    <img id="steph-avatar" src="assets/StephanieVelazquez4.jpg" class="rounded-circle">
-                    <p>Steph</p>
-                    <p>Software Developer</p>
+                    <a class="navbar-brand mx-auto" href="#">
+                        <img id="steph-avatar" src="assets/StephanieVelazquez4.jpg" class="rounded-circle">
+                         <p class="text-center">Steph<br></p>
+                         <p class="">Software Developer</p>
                     </a>
                     <!------NAV LINKS------>
-                    <nav class="nav nav-pills minimal flex-column">
+                    <nav class="nav nav-pills minimal flex-column mx-auto ">
                         <a class="nav-link" href="#about">About Me</a>
                         <a class="nav-link" href="#resume">Resume</a>
                         <a class="nav-link" href="#edu">Education</a>
@@ -100,7 +62,19 @@
         </div>
     <div class="col-sm-12 col-md-8">
         <div data-spy="scroll" data-target="#navi" data-offset="0" class="scrolling">
-            <div class="landing"></div>
+            <img src="assets/stop.svg" alt="menu oval" class="menu-btn d-none d-sm-block d-md-none" data-toggle="collapse" href="#aside" role="button" aria-expanded="false" aria-controls="menuToggle">
+            <!------SPLASHDOWN------>
+            <div class="pagination"></div>
+            <div class="landing">
+                <p id="design-title">designer of things.</p>
+                <div class="pagination1"></div>
+                <div class="pagination2"></div>
+            </div>
+            <div class="landing-2 text-center">
+                <p id="break-title">breaker of code.</p>
+            </div>
+
+            <!------MAIN THINGS------>
             <div class="module d-inline" id="about">About Me</div>
             <div class="module d-inline">Hello! I am Stephanie and I'm a Texas based software developer.</div>
 
@@ -227,16 +201,17 @@
     </div>
 
 <footer>
-    <p class="text-secondary">Do you know the Konami code?&#10084;</p>
+    <p class="text-secondary font-weight-bold pl-3">Do you know the Konami code?&#10084;</p>
+    <div>Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
 </footer>
 
 
 
 
 <script src="konami-code-master/konami.js"></script>
-<!--<script src="js/function.js"></script>-->
+<script src="js/function.js"></script>
+<script src="js/jquery.js"></script>
 <!------BOOTSTRAP------>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </body>
