@@ -62,7 +62,7 @@
 #design-title{
     display:none;
 }
-.pagination1, .pagination2{
+#slide-up-btn{
     height: 15px;
     width: 15px;
     margin: 15px;
@@ -83,7 +83,6 @@ body{
 
 
 .main{
-    height: 100vh;
     width: 100%;
     position: relative;
     overflow-y: scroll;
@@ -97,11 +96,20 @@ body{
 .scrolling{
     box-shadow: inset 2px 2px white;
     position: relative;
-    height: 95vh;
+    /*height: 95vh;*/
     overflow: auto;
     background-color: #feddde;
     font-size: 10px;
 }
 .card-header{
     height: 10px;
+}
+/*CAROUSEL TRANSITION*/
+.carousel{
+    transition: transform 2s ease, opacity .5s ease-out;
+    /*min-height: 100vh;*/
+}
+.div{
+    border-top: 2px;
+    border-color: #cdaaac;
 }
