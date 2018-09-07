@@ -10,7 +10,7 @@
     <!------FAVICON------>
     <link rel="icon" href="assets/cat-bus.gif">
     <!------GOOGLE FONT------>
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
     <!--<link rel="stylesheet" href="cover.css">-->
     <link rel="stylesheet" href="css/custom.css">
 
@@ -43,12 +43,13 @@
             <div id="aside">
                 <nav id="navi" class="navbar navbar-light">
                     <a class="navbar-brand mx-auto" href="#">
-                        <img id="steph-avatar" src="assets/StephanieVelazquez4.jpg" class="rounded-circle">
-                         <p class="text-center">Steph<br></p>
-                         <p class="">Software Developer</p>
+                        <img id="steph-avatar" src="assets/StephanieVelazquez4.jpg" class="rounded-circle mx-auto">
+                        <br>
+                         <p class="text-center" style="font-size: 15px">Steph<br></p>
+                         <p class="text-center" style="font-size: 10px">Software Developer</p>
                     </a>
                     <!------NAV LINKS------>
-                    <nav class="nav nav-pills minimal flex-column mx-auto ">
+                    <nav class="nav nav-pills minimal flex-column mx-auto" style="font-size: 15px">
                         <a class="nav-link" href="#about">About Me</a>
                         <a class="nav-link" href="#resume">Resume</a>
                         <a class="nav-link" href="#edu">Education</a>
@@ -62,21 +63,33 @@
         </div>
 
         </div>
-    <div class="col-sm-12 col-md-8">
-        <div data-spy="scroll" data-target="#navi" data-offset="0" class="scrolling">
-            <img src="assets/stop.svg" alt="menu oval" class="menu-btn d-none d-sm-block d-md-none" data-toggle="collapse" href="#aside" role="button" aria-expanded="false" aria-controls="menuToggle">
-            <!------SPLASHDOWN------>
-            <div class="pagination"></div>
-            <div class="landing" id="landing">
-                <p id="design-title">designer of things.</p>
-                <div class="pagination1" id="pagination1"></div>
-                <div class="pagination2" id="pagination2"></div>
-            </div>
-            <div class="landing-2 text-center" id="landing-2">
-                <p id="break-title">breaker of code.</p>
+    <div class="col-sm-12 col-md-8" id="main">
+
+<!----------CAROUSEL---------->
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100" src="assets/pc-floral.gif" alt="First slide">
+                        <div class="carousel-caption d-none d-md-block text-dark">
+                            <p>designer of things</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100" src="assets/pc-broken.gif" alt="Second slide">
+                        <div class="carousel-caption d-none d-md-block text-dark">
+                            <p>breaker of code</p>
+                        </div>
+                    </div>
+                </div>
             </div>
 
+
 <!----------MAIN THINGS------>
+        <div data-spy="scroll" data-target="#navi" data-offset="0" class="scrolling">
             <!------ABOUT ME------>
             <div class="card" id="about">
                 <div class="card-header">
@@ -106,7 +119,7 @@
                 <div class="card-header">
                     Education
                 </div>
-                <img class="card-img-top" src="assets/codeupicon-2.png" alt="Card image cap" style="padding:2rem;display:inline-block;height:14rem;">
+                <img class="card-img-top" src="assets/codeupicon-2.png" alt="Card image cap" style="padding-top:6rem;padding-bottom:2rem;padding-left:2rem; padding-right:2rem; display:inline-block;height:14rem;">
                 <div class="card-body">
                     <h5 class="card-title">Codeup</h5>
                     <p class="card-text">18 week full-stack development program focusing on the LAMP stack.</p>

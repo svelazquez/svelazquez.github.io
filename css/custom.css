@@ -9,7 +9,6 @@
     /*border: 1px dotted black;*/
     text-align: center;
     font-size: small;
-    font-weight: bold;
     /*text-shadow: #cdaaac 1px 1px 1px;*/
 
 }
@@ -30,7 +29,15 @@
     height: 95vh;
     alignment: left;
     background-color: #feddde;
-    box-shadow: 1px 1px 50px 1px rgba(0,0,0,0.5);
+    box-shadow: inset 2px 2px white, 2px 2px black;
+
+}
+
+#main{
+    box-shadow: inset 2px 2px white, 2px 2px black;
+}
+.navbar-brand{
+
 }
 /*************************SPLASHDOWN****************************/
 /*GIF CREDIT SASHAKATZ ON TUMBLR*****Sashakatz.tumblr.com*/
@@ -41,21 +48,15 @@
 
 .landing, .landing-2{
     background-repeat: no-repeat;
-    background-position: top;
+    /*background-position: top;*/
     background-color: #feddde;
     height: 100vh;
     text-align: center;
+    box-shadow: inset 2px 2px white;
 }
 .landing-2{
     background-image: url(../assets/pc-broken.gif);
     padding-top: 55vh;
-
-}
-.menu-btn{
-    height: 50px;
-    width: 50px;
-    margin: 15px;
-    position:fixed;
 
 }
 #design-title{
@@ -73,7 +74,7 @@
 
 body{
     background-image: url(../assets/tokyo-greenery.jpg);
-    font-family: 'Roboto Slab', serif;
+    font-family: 'Press Start 2P', cursive;
     height: 100%;
     padding:5px;
 
@@ -90,27 +91,17 @@ body{
 }
 
 
-.col-sm-12{
-    width: 100%;
+.col-sm-12, .col-md-8{
+    padding: 0px;
 }
 .scrolling{
+    box-shadow: inset 2px 2px white;
     position: relative;
     height: 95vh;
     overflow: auto;
-    background-color: rgb(255,240, 245);
+    background-color: #feddde;
+    font-size: 10px;
 }
-div {
-    display: block;
-}
-/*ANIMATION*/
-.come-in {
-    transform: translateY(150px);
-    animation: come-in 0.8s ease forwards;
-}
-.come-in:nth-child(odd) {
-    animation-duration: 0.6s; /* So they look staggered */
-}
-
-@keyframes come-in {
-    to { transform: translateY(0); }
+.card-header{
+    height: 10px;
 }
