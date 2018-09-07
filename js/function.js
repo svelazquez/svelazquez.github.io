@@ -6,6 +6,12 @@ $(document).ready(function(){
        $("#design-title, #break-title").fadeIn("slow");
    },500);
 
+   $("#pagination2").click(function(){
+       alert("clicked");
+        $("#landing").removeClass("landing");
+       $("#landing").addClass("landing2");
+   });
+
 //     /**
 //      * Copyright 2012, Digital Fusion
 //      * Licensed under the MIT license.
