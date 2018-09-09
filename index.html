@@ -13,10 +13,8 @@
     <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
     <!--<link rel="stylesheet" href="cover.css">-->
     <link rel="stylesheet" href="css/custom.css">
-    <!------ANIMATE------>
-    <link rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-    ----DEVICONS------>
+    <link rel="stylesheet" href="css/animate.css">
+    <!------DEVICONS------>
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
@@ -53,7 +51,7 @@
 </div>
 
 <div class="container-fluid">
-    <div class="row">
+    <div class="row justify-content-center">
         <div class="col-md-auto d-none ">
             <div id="aside">
                 <nav id="navi" class="navbar navbar-light">
@@ -94,7 +92,7 @@
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img class="d-block w-100" src="assets/pc-broken.gif" alt="Second slide">
+                        <img class="d-block w-100" id="second-slide" src="assets/pc-broken.gif" alt="Second slide">
                         <div class="carousel-caption d-none d-md-block text-dark">
                             <p>breaker of code</p>
                         </div>
@@ -106,24 +104,25 @@
 <!----------MAIN THINGS------>
         <div data-spy="scroll" data-target="#navi" data-offset="0" class="scrolling">
             <!------ABOUT ME------>
-            <div class="card animated fadeInRight" id="about">
+            <div class="card" id="about">
                 <div class="card-header">
                     About Me
                 </div>
                 <div class="card-body">
-                    <h5 class="card-title">Hello! I am Stephanie and I'm a Texas based software developer.</h5>
+                    <h6 class="card-title">Hello! I am Stephanie and I'm a Texas based software developer.</h6>
                     <p class="card-text">My skills range from design, HTML, CSS, Javascript, all the way to Java, C ,and Bash/Perl scripting. I dedicate myself to the products I create for you.</p>
                     <p>I operate in San Antonio, Austin, and its surrounding areas.</p>
                 </div>
             </div>
 
+
             <!------RESUME------>
-            <div class="card animated fadeInLeft" id="resume">
+            <div class="card" id="resume">
                 <div class="card-header">
                     Resume
                 </div>
                 <div class="card-body">
-                    <h5 class="card-title">Skip the rest, you've found the best</h5>
+                    <h5 class="card-title">Skip the rest</h5>
                     <p class="card-text">Are you a busy hiring manager? Are all the devs blurring together? Save time and download my resume as a pdf.</p>
                     <a href="pdf/StephanieVelazquez4.pdf" class="btn btn-primary">Download</a>
                 </div>

@@ -73,7 +73,10 @@
 
 
 body{
-    background-image: url(../assets/tokyo-greenery.jpg);
+    /*background-image: url(../assets/tokyo-greenery.jpg);*/
+    /*background-repeat: no-repeat;*/
+    /*background-size: cover;*/
+    background-color: #fdddde;
     font-family: 'Press Start 2P', cursive;
     height: 100%;
     padding:5px;
@@ -103,13 +106,38 @@ body{
 }
 .card-header{
     height: 10px;
+    background-color: #cdaaac;
+    !important;
 }
 /*CAROUSEL TRANSITION*/
 .carousel{
     transition: transform 2s ease, opacity .5s ease-out;
     /*min-height: 100vh;*/
 }
+.card-body{
+    border-top: 10px solid lavenderblush;
+    border-right: 5px solid lavenderblush;
+    border-bottom: 5px solid lavenderblush;
+    border-left: 5px solid lavenderblush;
+}
+.card{
+    border-bottom:  5px outset black;
+    border-right: 5px outset black;
+    border-left: 5px inset #f5f6f6;
+    border-top: 5px inset #f5f6f6;
+}
+.card-header{
+    padding-bottom:20px;
+}
 .div{
-    border-top: 2px;
-    border-color: #cdaaac;
+    box-shadow: inset 2px 2px white;
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+    !important
+
+}
+/*RESIZES CAROUSEL IMAGES*/
+.carousel>.carousel-inner>.carousel-item>img{
+    height: 640px;
+    width: 360px;
 }
