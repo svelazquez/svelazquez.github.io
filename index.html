@@ -130,7 +130,7 @@
 
 <!----------EDUCATION----------->
             <!------CARD 1------>
-            <div class="card edu" style="width: 18rem; display:inline-block;margin:0em;">
+            <div class="card" id="edu" >
                 <div class="card-header">
                     Codeup
                 </div>
@@ -147,7 +147,7 @@
 
 
             <!------CARD 2------>
-            <div class="card edu" style="width: 18rem;display:inline-block;margin:0em;">
+            <div class="card" id="edu" >
                 <div class="card-header">
                     The University of Texas at San Antonio
                 </div>
@@ -165,7 +165,7 @@
 
 
             <!------CARD 3------>
-            <div class="card" style="width: 18rem;display:inline-block;margin:0em;">
+            <div class="card" id="edu">
                 <div class="card-header">
                     The University of Texas at San Antonio
                 </div>
@@ -180,6 +180,45 @@
 
             <!------TECHNICAL SKILLS------>
             <h4 id="technical-skills">Technical Skills</h4>
+
+
+                        <i class="devicon-bootstrap-plain"></i><div style="width: 500px; height: 25px; background-color: #c0c0c0;"></div>
+                        <i class="devicon-git-plain"></i><div style="width: 500px; height: 25px; background-color: #c0c0c0;"></div>
+                        <i class="devicon-github-plain"></i><div style="width: 500px; height: 25px; background-color: #c0c0c0;"></div>
+                        <i class="devicon-javascript-plain"></i><div style="width: 500px; height: 25px; background-color: #c0c0c0;"></div>
+                        <i class="devicon-jquery-plain"></i><div style="width: 500px; height: 25px; background-color: #c0c0c0;"></div>
+
+                        <!------OTHER SKILLS THAT I FEEL AREN'T AS IMPORTANT TO QUANTIFY------>
+                        <i class="devicon-linux-plain"></i>
+                        <i class="devicon-windows8-original"></i>
+                        <i class="devicon-ssh-plain"></i>
+                        <i class="devicon-slack-plain"></i>
+
+            <h3 id="vg-skills">Video Game Skills</h3>
+            <h6>Skyrim</h6>
+            <div style="width: 500px; height: 25px; background-color: #c0c0c0;">
+                <p class="float-left">72%</p>
+                <div style="width: 360px; height: 25px; background-color: #5e8a65;"></div>
+            </div>
+            <!--Portal 2 73%-->
+            <h6>Portal 2</h6>
+            <div style="width: 500px; height: 25px; background-color: #c0c0c0;">
+                <p class="float-left">73%</p>
+                <div style="width: 365px; height: 25px; background-color: #5e8a65;"></div>
+            </div>
+            <h6>Super Mario Odyssey</h6>
+            <div style="width: 500px; height: 25px; background-color: #c0c0c0;">
+                <p class="float-left">73%</p>
+                <div style="width: 365px; height: 25px; background-color: #5e8a65;"></div>
+            </div>
+            <!--Fallout 4 45%-->
+
+            <!--Bioshock Infinite 38%-->
+            <!--Cuphead 21%-->
+            <!--Legend of Zelda: BOTW 50%-->
+            <!--Super Mario Odyssey: 71%-->
+
+
             <table class="table">
                 <thead>
                 <tr>
@@ -188,21 +227,10 @@
                     <th scope="col">Operating Systems </th>
                 </tr>
                 </thead>
+
                 <tbody>
                 <tr>
                     <td>
-                        <i class="devicon-bootstrap-plain"></i>
-                        <i class="devicon-bootstrap-plain"></i>
-                        <i class="devicon-git-plain"></i>
-                        <i class="devicon-github-plain"></i>
-                        <i class="devicon-javascript-plain"></i>
-                        <i class="devicon-jquery-plain"></i>
-                        <i class="devicon-linux-plain"></i>
-                        <i class="devicon-slack-plain"></i>
-                        <i class="devicon-ssh-plain"></i>
-                        <i class="devicon-windows8-original"></i>
-
-
 
 
 
@@ -234,12 +262,39 @@
                 <li>Feline foster parent, 2012-2016 </li>
                 <li>Avid gamer, Console/PC </li>
             </ul>
-            <p><a href="pdf/StephanieVelazquez4.pdf" download>Download</a> my resume as a pdf</p>
             <h2 id="portfolio">Portfolio</h2>
-            <p>Script to emulate bash find utility</p>
-            <p>Script to organize college assignments into proj folders</p>
-            <p>Weather Widget</p>
-            <p>Coffee Craze. Allows for user suggestions</p>
+
+            <ul class="nav nav-tabs">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#coffee">Coffee Craze</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#weather">Weather Widget</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#proj">Project Organization</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#find">Find Utility Emulator</a>
+                </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="coffee" role="tabpanel" aria-labelledby="coffee-tab">
+                   Coffee Craze. Allows for user suggestions
+                </div>
+                <div class="tab-pane fade" id="weather" role="tabpanel" aria-labelledby="weather-tab">
+                    Weather Widget
+                </div>
+                <div class="tab-pane fade" id="proj" role="tabpanel" aria-labelledby="proj-tab">
+                    <p>Script to organize college assignments into proj folders</p>
+
+                </div>
+                <div class="tab-pane fade" id="find" role="tabpanel" aria-labelledby="find-tab">
+                    Script to emulate bash find utility
+                </div>
+            </div>
+
+
 
 
 
