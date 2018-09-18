@@ -1,355 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Stephanie Velazquez </title>
-    <!------BOOTSTRAP------>
-    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Parallax Template - Materialize</title>
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <!------FAVICON------>
-    <link rel="icon" href="assets/cat-bus.gif">
-    <!------GOOGLE FONT------>
-    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
-    <!--<link rel="stylesheet" href="cover.css">-->
-    <link rel="stylesheet" href="css/custom.css">
-    <link rel="stylesheet" href="css/animate.css">
-    <!------DEVICONS------>
-    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-
-
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
 <body>
-<!------easter egg------>
-<div class="modal fade" tabindex="-1" id="myModal" role="dialog" style="background-image: url(konami-code-master/img/space-bckgrnd.jpg">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content" style="background: rgba(0,0,0,0.25); border: 1px solid white; box-shadow: 20px 10px 60px 2px rgba(255,255,255,0.5);">
-            <div class="modal-header">
-                <h4 class="modal-title" style="color: white;">No One's Around to Help</h4>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            </div>
-            <div class="modal-body" >
-                <img id="bob-dance" style=" z-index: 1;" src="konami-code-master/img/bob-dancing.gif">
-                <audio>
-                <source src="konami-code-master/audio/shooting_stars.mp3">
-                </audio>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Take Me, Void</button>
-            </div>
-        </div>
+  <nav class="white" role="navigation">
+    <div class="nav-wrapper container">
+      <a id="logo-container" href="#" class="brand-logo">Logo</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#">Navbar Link</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="sidenav">
+        <li><a href="#">Navbar Link</a></li>
+      </ul>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
     </div>
-</div>
+  </nav>
 
-<div class="container-fluid">
-    <div class="row justify-content-center">
-        <div class="col-md-auto d-none ">
-            <div id="aside">
-                <nav id="navi" class="navbar navbar-light">
-                    <a class="navbar-brand mx-auto" href="#">
-                        <img id="steph-avatar" src="assets/StephanieVelazquez4.jpg" class="rounded-circle mx-auto">
-                        <br>
-                         <p class="text-center" style="font-size: 15px">Steph<br></p>
-                         <p class="text-center" style="font-size: 10px">Software Developer</p>
-                    </a>
-                    <!------NAV LINKS------>
-                    <nav class="nav nav-pills minimal flex-column mx-auto" style="font-size: 15px">
-                        <a class="nav-link" href="#about">About Me</a>
-                        <a class="nav-link" href="#resume">Resume</a>
-                        <a class="nav-link" href="#edu">Education</a>
-                        <a class="nav-link" href="#technical-skills">Technical Skills</a>
-                        <a class="nav-link" href="#other-xp">Other Experience</a>
-                        <a class="nav-link" href="#activities">Activities</a>
-                        <a class="nav-link" href="#portfolio">Portfolio</a>
-                        <a class="nav-link" href="#contact">Contact Me</a>
-                    </nav>
-                </nav>
+  <div id="index-banner" class="parallax-container container1 valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <br><br>
+        <h1 class="header center teal-text text-lighten-2">STEPHANIE VELAZQUEZ</h1>
+        <div class="row center">
+          <h5 class="header col s12 light">Creative design & Innovative code</h5>
         </div>
-
+        <div class="row center">
+          <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">\/</a>
         </div>
-    <div class="col-sm-12 col-md-8" id="main">
+        <br><br>
 
-<!----------CAROUSEL---------->
-            <div id="carouselIndicators" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-target="#carouselIndicators" data-slide-to="0" class="active"></li>
-                    <li data-target="#carouselIndicators" data-slide-to="1"></li>
-                </ol>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img class="d-block w-100" src="assets/pc-floral.gif" alt="First slide">
-                        <div class="carousel-caption d-none d-md-block text-dark">
-                            <p>designer of things</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img class="d-block w-100" id="second-slide" src="assets/pc-broken.gif" alt="Second slide">
-                        <div class="carousel-caption d-none d-md-block text-dark">
-                            <p>breaker of code</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-<!----------MAIN THINGS------>
-        <div data-spy="scroll" data-target="#navi" data-offset="0" class="scrolling">
-            <!------ABOUT ME------>
-            <div class="card" id="about">
-                <div class="card-header">
-                    About Me
-                </div>
-                <div class="card-body">
-                    <h6 class="card-title">Hello! I am Stephanie and I'm a Texas based software developer.</h6>
-                    <p class="card-text">My skills range from design, HTML, CSS, Javascript, all the way to Java, C ,and Bash/Perl scripting. I dedicate myself to the products I create for you.</p>
-                    <p>I operate in San Antonio, Austin, and its surrounding areas.</p>
-                </div>
-            </div>
-
-
-            <!------RESUME------>
-            <div class="card" id="resume">
-                <div class="card-header">
-                    Resume
-                </div>
-                <div class="card-body">
-                    <h5 class="card-title">Skip the rest</h5>
-                    <p class="card-text">Are you a busy hiring manager? Are all the devs blurring together? Save time and download my resume as a pdf.</p>
-                    <a href="pdf/StephanieVelazquez4.pdf" class="btn btn-primary">Download</a>
-                </div>
-            </div>
-
-<!----------EDUCATION----------->
-            <!------CARD 1------>
-            <div class="card" id="edu" >
-                <div class="card-header">
-                    Codeup
-                </div>
-                <div class="card-body">
-                    <img src="assets/codeupicon-2.png" alt="codeup-icon" id="card-icon">
-
-                    <p class="card-text float-right text-align-left" style="position: relative; right: 15%;">
-                    18 week full-stack development program <br>focus on the LAMP stack.
-                    </p>
-                </div>
-            </div>
-            <br>
-
-
-
-            <!------CARD 2------>
-            <div class="card" id="edu" >
-                <div class="card-header">
-                    The University of Texas at San Antonio
-                </div>
-                <div class="card-body">
-                    <!--<h5 class="card-title">The University of Texas at San Antonio</h5>-->
-
-                    <img src="assets/utsa-icon.png" alt="utsa icon" id="card-icon">
-
-                    <p class="card-text float-right text-align-left" style="position: relative; right: 5%;">
-                         B.A. Psychology<br>Graduated 2016<br>3.3GPA
-                    </p>
-                </div>
-            </div>
-            <br>
-
-
-            <!------CARD 3------>
-            <div class="card" id="edu">
-                <div class="card-header">
-                    The University of Texas at San Antonio
-                </div>
-                <div class="card-body">
-                    <img src="assets/utsa-icon.png" alt="utsa icon" id="card-icon">
-
-                    <p class="card-text float-right text-align-left" style="position: relative; right: 5%;">
-                        B.S. Computer Science<br>Some Classes<br>3.0 GPA
-                    </p>
-                </div>
-            </div>
-
-            <!------TECHNICAL SKILLS------>
-            <h4 id="technical-skills">Technical Skills</h4>
-
-
-                        <i class="devicon-bootstrap-plain"></i><div style="width: 500px; height: 25px; background-color: #c0c0c0;"></div>
-                        <i class="devicon-git-plain"></i><div style="width: 500px; height: 25px; background-color: #c0c0c0;"></div>
-                        <i class="devicon-github-plain"></i><div style="width: 500px; height: 25px; background-color: #c0c0c0;"></div>
-                        <i class="devicon-javascript-plain"></i><div style="width: 500px; height: 25px; background-color: #c0c0c0;"></div>
-                        <i class="devicon-jquery-plain"></i><div style="width: 500px; height: 25px; background-color: #c0c0c0;"></div>
-
-                        <!------OTHER SKILLS THAT I FEEL AREN'T AS IMPORTANT TO QUANTIFY------>
-                        <i class="devicon-linux-plain"></i>
-                        <i class="devicon-windows8-original"></i>
-                        <i class="devicon-ssh-plain"></i>
-                        <i class="devicon-slack-plain"></i>
-
-            <h3 id="vg-skills">Video Game Skills</h3>
-            <h6>Skyrim</h6>
-            <div style="width: 500px; height: 25px; background-color: #c0c0c0;">
-                <p class="float-left">72%</p>
-                <div style="width: 360px; height: 25px; background-color: #5e8a65;"></div>
-            </div>
-            <!--Portal 2 73%-->
-            <h6>Portal 2</h6>
-            <div style="width: 500px; height: 25px; background-color: #c0c0c0;">
-                <p class="float-left">73%</p>
-                <div style="width: 365px; height: 25px; background-color: #5e8a65;"></div>
-            </div>
-            <h6>Super Mario Odyssey</h6>
-            <div style="width: 500px; height: 25px; background-color: #c0c0c0;">
-                <p class="float-left">73%</p>
-                <div style="width: 365px; height: 25px; background-color: #5e8a65;"></div>
-            </div>
-            <!--Fallout 4 45%-->
-
-            <!--Bioshock Infinite 38%-->
-            <!--Cuphead 21%-->
-            <!--Legend of Zelda: BOTW 50%-->
-            <!--Super Mario Odyssey: 71%-->
-
-
-            <table class="table">
-                <thead>
-                <tr>
-                    <th scope="col">Languages </th>
-                    <th scope="col">Relevant Coursework </th>
-                    <th scope="col">Operating Systems </th>
-                </tr>
-                </thead>
-
-                <tbody>
-                <tr>
-                    <td>
-
-
-
-
-
-
-                        C, Perl, SQL, git
-                        Linux Utilities (awk, sed, grep),<br> Clefairy, HTML, CSS, Javascript, Jquery, Jigglypuff, Java, MySQL, Spring </td>
-                    <td>
-                        <ul>
-                            <li>Programming I</li>
-                            <li>Data Structures</li>
-                            <li>Systems Programming</li>
-                        </ul>
-                    </td>
-                    <td>
-                        UNIX/Linux, Windows Vista/7/8/10
-                    </td>
-                </tr>
-                </tbody>
-            </table>
-
-            <h4 id="other-xp">Other Experience</h4>
-
-            <h4 id="activities">Activities</h4>
-            <ul>
-                <li>Recruitment/Social Chair/Interchapter Rep, Phi Sigma Pi National Honor Fraternity, 2013-2017</li>
-                <li>Member, Honors Alliance Honor Society, 2013-2017 </li>
-                <li>Feline foster parent, 2012-2016 </li>
-                <li>Avid gamer, Console/PC </li>
-            </ul>
-            <h2 id="portfolio">Portfolio</h2>
-
-            <ul class="nav nav-tabs">
-                <li class="nav-item">
-                    <a class="nav-link active" href="#coffee">Coffee Craze</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#weather">Weather Widget</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#proj">Project Organization</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#find">Find Utility Emulator</a>
-                </li>
-            </ul>
-            <div class="tab-content" id="myTabContent">
-                <div class="tab-pane fade show active" id="coffee" role="tabpanel" aria-labelledby="coffee-tab">
-                   Coffee Craze. Allows for user suggestions
-                </div>
-                <div class="tab-pane fade" id="weather" role="tabpanel" aria-labelledby="weather-tab">
-                    Weather Widget
-                </div>
-                <div class="tab-pane fade" id="proj" role="tabpanel" aria-labelledby="proj-tab">
-                    <p>Script to organize college assignments into proj folders</p>
-
-                </div>
-                <div class="tab-pane fade" id="find" role="tabpanel" aria-labelledby="find-tab">
-                    Script to emulate bash find utility
-                </div>
-            </div>
-
-
-
-
-
-
-            <h2 id="contact">Contact Me</h2>
-            <div class="form-group">
-                <label for="exampleFormControlInput1">Email address</label>
-                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-            </div>
-            <div class="form-group">
-                <label for="exampleFormControlSelect1">Example select</label>
-                <select class="form-control" id="exampleFormControlSelect1">
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                    <option>5</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <label for="exampleFormControlSelect2">Example multiple select</label>
-                <select multiple class="form-control" id="exampleFormControlSelect2">
-                    <option>1</option>
-                    <option>2</option>
-                    <option>3</option>
-                    <option>4</option>
-                    <option>5</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <label for="exampleFormControlTextarea1">Example textarea</label>
-                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-            </div>
-            </form>
-            <a href="mailto:svelazquez@gmail.com?Subject=Hello%20again" target="_top">Send Mail</a>
-            <a href="https://www.linkedin.com/in/stephanie-velazquez-22a390104/">LinkedIn</a>
-            <a href="https://github.com/user/svelazquez">Github</a>
-        </div>
+      </div>
     </div>
+    <div class="parallax parallax1"><img src="background1.jpg" alt="Unsplashed background img 1"></div>
+  </div>
+
+
+  <div class="container">
+    <div class="section">
+
+      <!--   Icon Section   -->
+      <div class="row">
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center brown-text"><i class="material-icons">flash_on</i></h2>
+            <h5 class="center">About Me</h5>
+
+            <p class="light">We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.</p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center brown-text"><i class="material-icons">group</i></h2>
+            <h5 class="center">Technologies</h5>
+
+            <p class="light">By utilizing elements and principles of Material Design, we were able to create a framework that incorporates components and animations that provide more feedback to users. Additionally, a single underlying responsive system across all platforms allow for a more unified user experience.</p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center brown-text"><i class="material-icons">settings</i></h2>
+            <h5 class="center">Paragraph 3</h5>
+
+            <p class="light">We have provided detailed documentation as well as specific code examples to help new users get started. We are also always open to feedback and can answer any questions a user may have about Materialize.</p>
+          </div>
+        </div>
+      </div>
+
     </div>
-</div>
+  </div>
 
-<footer>
-    <p class="text-light font-weight-bold pl-3">Do you know the Konami code?&#10084;</p>
-    <div>Icons made by <a href="https://www.flaticon.com/authors/smashicons" title="Smashicons">Smashicons</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
-</footer>
+<!--SECOND PARALLAX IMAGE-->
+  <div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="https://media.giphy.com/media/3oz8xFufV5l6G4ZNWo/giphy.gif" alt="Unsplashed background img 2"></div>
+  </div>
+
+  <div class="container">
+    <div class="section">
+
+      <div class="row">
+        <div class="col s12 center">
+          <h3><i class="mdi-content-send brown-text"></i></h3>
+          <h4>Contact Us</h4>
+          <p class="left-align light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id nunc nec volutpat. Etiam pellentesque tristique arcu, non consequat magna fermentum ac. Cras ut ultricies eros. Maecenas eros justo, ullamcorper a sapien id, viverra ultrices eros. Morbi sem neque, posuere et pretium eget, bibendum sollicitudin lacus. Aliquam eleifend sollicitudin diam, eu mattis nisl maximus sed. Nulla imperdiet semper molestie. Morbi massa odio, condimentum sed ipsum ac, gravida ultrices erat. Nullam eget dignissim mauris, non tristique erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
 
 
+  <div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="https://media.giphy.com/media/3o7TKJ31nPPCIm4uQM/giphy.gif" alt="Unsplashed background img 3"></div>
+  </div>
+
+  <footer class="page-footer teal">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Company Bio</h5>
+          <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
 
 
-<script src="konami-code-master/konami.js"></script>
-<script src="js/function.js"></script>
-<script src="js/jquery.js"></script>
-<!------BOOTSTRAP------>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-</body>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Settings</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Link 1</a></li>
+            <li><a class="white-text" href="#!">Link 2</a></li>
+            <li><a class="white-text" href="#!">Link 3</a></li>
+            <li><a class="white-text" href="#!">Link 4</a></li>
+          </ul>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Connect</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Link 1</a></li>
+            <li><a class="white-text" href="#!">Link 2</a></li>
+            <li><a class="white-text" href="#!">Link 3</a></li>
+            <li><a class="white-text" href="#!">Link 4</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      Made by <a class="brown-text text-lighten-3" href="http://materializecss.com">Materialize</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+  </body>
 </html>
