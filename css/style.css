@@ -33,9 +33,10 @@ p {
     color: rgba(255,255,255,.9);
 }
 
-
-
-
+/*SIZING FOR CONTAINERS*/
+.container{
+    min-height: 100vh;
+}
 
 
 
@@ -78,4 +79,31 @@ footer.page-footer {
 
 h1{
     font-family: "Baron", Fallback, sans-serif;
+    text-shadow: 2px 2px 0px purple, 4px 4px 2px dodgerblue;
+
+}
+h2,h3,h4,h5,h5{
+    font-family: "Baron", Fallback, sans-serif;
+}
+
+
+/*PROFILE PICTURE SIZING*/
+#profile-image {
+    border-radius: 25px;
+    height: 200px;
+    width: 200px;
+}
+
+/*DEV ICON SIZING*/
+#dev-icons>img,#dev-icons-exposed>img{
+    height: 64px;
+    width: 64px;
+    display: inline-block;
+}
+
+div.container.valign-wrapper{
+    width: 100%;
+    background-image: url(https://img.wallpapersafari.com/img720/75/5/SgVuft.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
