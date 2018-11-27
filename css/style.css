@@ -1,109 +1,114 @@
-/* Custom Stylesheet */
-/**
- * Use this file to override Materialize files so you can update
- * the core Materialize files in the future
- *
- * Made By MaterializeCSS.com
- */
-
-nav ul a,
-nav .brand-logo {
-  color: #444;
+*{
+    font-size: 100%;
+    font-family: "Chakra Petch", sans-serif;
+    !important;
 }
-
-p {
-  line-height: 2rem;
+p{
+    font-family: "Avenir Next";
+    font-size: 16pt;
 }
-
-.sidenav-trigger {
-  color: #26a69a;
+.home.card{
+    padding:100px;
 }
+.card{
+    /*min-height: 50vh;*/
+    box-shadow: 8px 8px 6px -6px black;
 
-.parallax-container {
-  min-height: 380px;
-  line-height: 0;
-  height: auto;
-  color: rgba(255,255,255,.9);
-}
-/*SIZING FOR SPLASHDOWN VIEW*/
-.parallax-container.container1{
-    min-height: 100vh;
-    line-height: 0;
-    height: auto;
-    color: rgba(255,255,255,.9);
-}
-
-/*SIZING FOR CONTAINERS*/
-.container{
-    min-height: 100vh;
-}
-
-
-
-  .parallax-container .section {
-    width: 100%;
-  }
-
-@media only screen and (max-width : 992px) {
-  .parallax-container .section {
-    position: absolute;
-    top: 40%;
-  }
-  #index-banner .section {
-    top: 10%;
-  }
-}
-
-@media only screen and (max-width : 600px) {
-  #index-banner .section {
-    top: 0;
-  }
-}
-
-.icon-block {
-  padding: 0 15px;
-}
-.icon-block .material-icons {
-  font-size: inherit;
-}
-
-footer.page-footer {
-  margin: 0;
-}
-
-/*LOCAL FONT FOR HEADER*/
-@font-face {
-  font-family: "Baron";
-  src: url("../fonts/baron/Baron Neue.otf");
-}
-
-h1{
-    font-family: "Baron", Fallback, sans-serif;
-    text-shadow: 2px 2px 0px purple, 4px 4px 2px dodgerblue;
-
-}
-h2,h3,h4,h5,h5{
-    font-family: "Baron", Fallback, sans-serif;
-}
-
-
-/*PROFILE PICTURE SIZING*/
-#profile-image {
+    /*bottom: 25vh;*/
+    margin-top:0%;
+    border: dashed #2a5056 2px;
     border-radius: 25px;
-    height: 200px;
-    width: 200px;
+    background-color: #e3f2fd;
 }
 
-/*DEV ICON SIZING*/
-#dev-icons>img,#dev-icons-exposed>img{
-    height: 64px;
-    width: 64px;
-    display: inline-block;
+.card.projects{
+    padding: unset;
+}
+.skillscon{
+    height: 250px;
+    width: 250px;
 }
 
-div.container.valign-wrapper{
-    width: 100%;
-    background-image: url(https://img.wallpapersafari.com/img720/75/5/SgVuft.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+.card img {
+    height: 250px;
+    width: border-box;
+    margin-bottom: 5px;
+    border-radius: 25px 25px 0 0;
+}
+
+.card a {
+    width: inherit;
+}
+
+/*.one-edge-shadow {*/
+    /*box-shadow: 0 8px 6px -6px black;*/
+/*}*/
+
+
+.navbar{
+    background-color: #e3f2fd;
+}
+a span{
+    position: relative;
+    z-index:1000;
+    left:5;
+    background-color: yellow;
+}
+.nav-item{
+    margin: 5px;
+    border: dashed #2a5056 2px;
+    border-radius: 25px;
+    text-align: center;
+    background-color: #e3f2fd;
+}
+.home-graphic{
+    /*bottom:25vh;*/
+    /*float: left;*/
+    height: 150px;
+    width: 150px;
+    right: 10vh;
+    position: relative;
+    z-index: 1000;
+}
+body{
+    background-color: #97c0e0;
+}
+.hide{
+    display: none;
+}
+
+
+.contact-image{
+
+    width: 50px;
+    padding:5px;
+    margin:0;
+    !important;
+}
+ul{
+    display: flex;
+}
+li{
+    display: block;
+}
+
+/* Small devices (tablets, 768px and up) */
+@media screen and (min-width:768px) {
+    .home-graphic{
+        /*bottom:25vh;*/
+        /*float: left;*/
+        height: 150px;
+        width: 150px;
+        right: 5vh;
+        top: 5vh;
+        position: relative;
+        z-index: 1000;
+    }
+
+    .card {
+        /*min-height: 50vh;*/
+        top: 10vh;
+        bottom: 50vh;
+        /*margin-top: 12.5%;*/
+    }
 }
